@@ -49,7 +49,7 @@ async function showStonks (line) {
   for (let i = 0; i < controllerCount; i++) {
     await display.reset(i)
   }
-  await display.scroll(line, { scrollIn: true, loop: true, speed: 200 })
+  await display.scroll(line, { scrollIn: true, loop: true, speed: 25 })
   await display.resetAll()
 }
 
