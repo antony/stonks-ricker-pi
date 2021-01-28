@@ -3,6 +3,10 @@
 require('dotenv')
 const fetch = require('node-fetch')
 const { transform } = require('reorient')
+const Max7219 = require('max7219-display')
+
+const controllerCount = 4
+const display = new Max7219({ device: '/dev/spidev0.0', controllerCount })
 
 const list = [
   { symbol: 'GME' },
@@ -36,10 +40,10 @@ async function parseStonks (stonks) {
 
 async function showStonks (line) {
   for (let i = 0; i < controllerCount; i++) {
-    await m.reset(i)
+    await display.reset(i)
   }
-  await m.scroll(line, { scrollIn: true, loop: true, speed: 100 })
-  await m.resetAll()
+  await display.scroll(line, { scrollIn: true, loop: true, speed: 100 })
+  await display.resetAll()
 }
 
 async function tick () {
