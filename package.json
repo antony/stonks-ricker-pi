@@ -1,0 +1,20 @@
+{
+  "name": "stonks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "max7219-display": "^2.0.1",
+    "node-fetch": "^2.6.1",
+    "reorient": "^4.0.0"
+  },
+  "volta": {
+    "node": "15.7.0"
+  }
+}

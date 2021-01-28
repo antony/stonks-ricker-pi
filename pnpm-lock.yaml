@@ -1,0 +1,53 @@
+dependencies:
+  dotenv: 8.2.0
+  max7219-display: 2.0.1
+  node-fetch: 2.6.1
+  reorient: 4.0.0
+lockfileVersion: 5.2
+packages:
+  /@hapi/hoek/9.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-CAEbWH7OIur6jEOzaai83jq3FmKmv4PmX1JYfs9IrYcGEVI/lyL1EXJGCj7eFVJ0bg5QR8LMxBlEtA+xKiLpFw==
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+  /max7219-display/2.0.1:
+    dependencies:
+      pi-spi: 1.2.1
+    dev: false
+    resolution:
+      integrity: sha512-betlGrlwAWXt5OgpsVq9OoHu1JoPoHHLKX3mDQE8tGserYt+tKDtB1fHMqt8FZJDux+Gm3LuA1BpQSYqtoLBfA==
+  /nan/2.14.2:
+    dev: false
+    resolution:
+      integrity: sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
+  /node-fetch/2.6.1:
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    resolution:
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+  /pi-spi/1.2.1:
+    dependencies:
+      nan: 2.14.2
+    dev: false
+    requiresBuild: true
+    resolution:
+      integrity: sha512-cPquRYzFZJzPwFpFpLOY13bg+jYzufo0hhYi+IsMlcSSdmzHqHLvghUz4vZWcjm6tqiEwNoMP8MQR1wuyLpnnw==
+  /reorient/4.0.0:
+    dependencies:
+      '@hapi/hoek': 9.1.1
+    dev: false
+    engines:
+      node: '>=7.0.0'
+    resolution:
+      integrity: sha512-538nDh6WxbE3ZBlaginTycg6aq5SN2VQwB4eHhhtEMh/k1MqIpp8AP/Jc0IK0FrAlaPby3WxjhFrUZhuddaARA==
+specifiers:
+  dotenv: ^8.2.0
+  max7219-display: ^2.0.1
+  node-fetch: ^2.6.1
+  reorient: ^4.0.0
